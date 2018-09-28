@@ -2,8 +2,5 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  &:nth-child(n) {
-    flex: 1 0 auto;
-  }
+  justify-content: flex-start;
 }

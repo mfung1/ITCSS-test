@@ -1,6 +1,5 @@
 .#{$namespace}-btn {
   border-radius: px-to-rem(20px);
-  background-color: $crimson;
   display: inline-block;
   font-size: px-to-rem(10px);
   max-height: px-to-rem(40px);
@@ -16,16 +15,41 @@
     height: px-to-rem(40px);
   }
 
-  .#{$namespace}-lbl {
-    color: $ddl-white;
-    @include modern-bold;
+  &-flld {
+    background-color: $crimson;
+
+    .#{$namespace}-lbl {
+      color: $ddl-white;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 4px rgba($crimson, .4);
+      transition: box-shadow $transition-duration $transition-func;
+      .#{$namespace}-lbl:after {
+        border-bottom-color: $ddl-white;
+        transition: border-bottom-color $transition-duration $transition-func;
+      }
+    }
   }
 
-  &:hover,
-  &:focus {
-    .#{$namespace}-lbl:after {
-      border-bottom-color: $ddl-white;
-      transition: border-bottom-color $transition-duration $transition-func;
+  &-hllw {
+    box-shadow: inset 0 0 0 2px $crimson;
+
+    .#{$namespace}-lbl {
+      color: $crimson;
     }
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 2px $crimson, 0 0 0 4px rgba($crimson, .4);
+      .#{$namespace}-lbl:after {
+        border-bottom-color: $crimson;
+        transition: border-bottom-color $transition-duration $transition-func;
+      }
+    }
+  }
+
+  .#{$namespace}-lbl {
+    @include modern-bold;
   }
 }

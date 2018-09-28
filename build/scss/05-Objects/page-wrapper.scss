@@ -1,5 +1,5 @@
 .#{$namespace}-wrapper {
   max-width: px-to-rem(1200px);
-  margin: 0 auto;
+  margin: px-to-rem(56px) auto;
   padding: 0 px-to-rem(8px);
 }
