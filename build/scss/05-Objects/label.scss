@@ -6,4 +6,16 @@
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
+
+  &:after {
+    border-bottom: px-to-rem(1px) solid transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    transition: border $transition-duration $transition-function;
+    width: 100%;
+    
+  }
 }

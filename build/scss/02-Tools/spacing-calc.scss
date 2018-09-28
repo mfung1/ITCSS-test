@@ -1,0 +1,5 @@
+// Takes multiplier factor and returns value in rem
+// according to global settings.
+@function calcSpacing ($multiplier) {
+  @return (($base-spacing * $multiplier) / $base-font-size)+rem;
+}

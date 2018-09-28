@@ -18,5 +18,14 @@
 
   .#{$namespace}-lbl {
     color: $ddl-white;
+    @include modern-bold;
+  }
+
+  &:hover,
+  &:focus {
+    .#{$namespace}-lbl:after {
+      border-bottom-color: $ddl-white;
+      transition: border-bottom-color $transition-duration $transition-func;
+    }
   }
 }

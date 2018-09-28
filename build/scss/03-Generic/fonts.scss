@@ -1,13 +1,23 @@
 @font-face {
   font-family: modern-bold;
   font-weight: normal;
-  src: url(../../../assets/fonts/TESCOModern-Bold-web.woff) format('woff');
+  src: url(../../../Fonts/TESCOModern-Bold-web.woff2) format('woff2'),
+  url(../../../Fonts/TESCOModern-Bold-web.woff) format('woff');
 }
 
 @font-face {
   font-family: modern-regular;
   font-weight: normal;
-  src: url(../../../Fonts/TESCOModern-Regular-web.woff) format('woff');
+  src: url(../../../Fonts/TESCOModern-Regular-web.woff2) format('woff2'),
+       url(../../../Fonts/TESCOModern-Regular-web.woff) format('woff');
+}
+
+@mixin modern-bold {
+  font-family: 'modern-bold', Arial, Helvetica, sans-serif;
+}
+
+@mixin modern-regular {
+  font-family: 'modern-regular', Arial, Helvetica, sans-serif;
 }
 
 h1,h2,h2,h3 {
@@ -15,7 +25,7 @@ h1,h2,h2,h3 {
   color: $ddl-black;
 }
 
-p, span, a {
+p, a {
   font-family: 'modern-regular', Arial, Helvetica, sans-serif;
 }
 
