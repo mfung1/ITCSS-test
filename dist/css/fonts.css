@@ -1,0 +1,11 @@
+@font-face {
+  font-family: modern-bold;
+  font-weight: normal;
+  src: url(../../../assets/fonts/TESCOModern-Bold-web.woff) format('woff');
+}
+
+@font-face {
+  font-family: modern-regular;
+  font-weight: normal;
+  src: url(../../../Fonts/TESCOModern-Regular-web.woff) format('woff');
+}

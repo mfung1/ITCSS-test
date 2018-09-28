@@ -1,0 +1,14 @@
+// Media Queries
+@mixin breakpoint($point) {
+  @if $point == 'largeDesktop' {
+    @media (min-width: #{$break-largeDesktop}) { @content ; }
+  } @else if $point == 'desktop' {
+    @media (min-width: #{$break-desktop}) { @content ; }
+  } @else if $point == 'tablet' {
+    @media (min-width: #{$break-tablet})  { @content ; }
+  } @else if $point == 'mobile' {
+    @media (min-width: #{$break-mobile})  { @content ; }
+  } @else {
+    @media (min-width: $point) { @content ; }
+  }
+}

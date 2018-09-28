@@ -1,0 +1,22 @@
+.#{$namespace}-btn {
+  border-radius: px-to-rem(20px);
+  background-color: $crimson;
+  display: inline-block;
+  font-size: px-to-rem(10px);
+  max-height: px-to-rem(40px);
+  padding: 0 px-to-rem(20px);
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .3s;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  .#{$namespace}-chvrn {
+    max-height: px-to-rem(40px);
+    height: px-to-rem(40px);
+  }
+
+  .#{$namespace}-lbl {
+    color: $ddl-white;
+  }
+}

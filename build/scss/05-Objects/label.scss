@@ -1,0 +1,9 @@
+.#{$namespace}-lbl {
+  display: inline-block;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(20px);
+  margin-right: px-to-rem(3px);
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+}

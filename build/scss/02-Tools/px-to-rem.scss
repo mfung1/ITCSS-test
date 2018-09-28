@@ -1,0 +1,17 @@
+// Convert input to just number value
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+	@return $number;
+}
+
+// Pass in a px value or just the digits.
+// Returns the value in rems (Input / 16)
+// $root-font-size is defined in ../01-Settings/fonts.scss
+@function px-to-rem($size: 16px) {
+	$targetSize: strip-unit($size);
+	$rootSize: strip-unit($base-font-size);
+	$remSize: $targetSize / $rootSize;
+	@return #{$remSize}rem;
+}

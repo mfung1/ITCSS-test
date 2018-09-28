@@ -1,0 +1,14 @@
+.#{$namespace}-t1 {
+  font-size: px-to-rem(24px);
+  line-height: px-to-rem(32px);
+}
+
+.#{$namespace}-t2 {
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(28px);
+}
+
+.#{$namespace}-t3 {
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(24px);
+}

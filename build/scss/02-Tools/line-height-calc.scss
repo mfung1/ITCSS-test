@@ -1,0 +1,8 @@
+// Pass in a px value or just the digits.
+// Returns the value in a unitless line-height value.
+@function lh-ratio ($font-size, $line-height) {
+	$fontVal: strip-unit($font-size);
+	$lhVal: strip-unit($line-height);
+	$lh-ratio: $lhVal / $fontVal;
+	@return $lh-ratio;
+}

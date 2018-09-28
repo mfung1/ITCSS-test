@@ -1,0 +1,15 @@
+.#{$namespace}-chvrn {
+  display: inline-block;
+  fill: none;
+  max-width: px-to-rem(18px);
+  stroke-width: 1.2;
+  vertical-align: middle;
+
+  &--wht {
+    stroke: $ddl-white;
+  }
+
+  &--blk {
+    stroke: $ddl-black;
+  }
+}

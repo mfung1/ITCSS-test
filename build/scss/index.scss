@@ -1,0 +1,32 @@
+// 01-Settings
+@import './01-Settings/globals.scss',
+        './01-Settings/colors',
+        './01-Settings/breakpoints.scss';
+
+// 02-Tools
+@import './02-Tools/breakpoint.scss',
+        './02-Tools/line-height-calc.scss',
+        './02-Tools/px-to-rem.scss';
+
+// 03-Generic
+@import './03-Generic/fonts.scss',
+        './03-Generic/reset.scss',
+        './03-Generic/flex-group.scss';
+
+// 04-Elements
+@import './04-Elements/headings.scss',
+        './04-Elements/links.scss';
+
+// 05-Objects
+@import './05-Objects/page-wrapper.scss',
+        './05-Objects/paragraphs.scss',
+        './05-Objects/divider.scss',
+        './05-Objects/chevron.scss',
+        './05-Objects/label.scss';
+
+// 06-Components
+@import './06-Components/button.scss',
+        './06-Components/promo-pairing.scss';
+
+// 07-Utilities
+@import './07-Utilities/spacings.scss';
