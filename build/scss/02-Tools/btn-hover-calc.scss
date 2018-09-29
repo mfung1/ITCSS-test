@@ -1,0 +1,27 @@
+@mixin button-interact($panelcolor:'', $boxshadow:'', $underline:'') {
+  @if ($bgcolor != '' and $color != '') {
+    outline: none;
+    @if (lightness($bgcolor) < 50) {
+      box-shadow: 0 0 0 4px rgba($color, .6);
+    } @else {
+      box-shadow: 0 0 0 4px rgba($color, .4);
+    }
+  }
+  transition: box-shadow .3s;
+  @if ($color2 != '') {
+    .#{$namespace}-button-label:after {
+      border-bottom-color: $color2;
+      transition: border .3s;
+    }
+  }
+}
+@mixin button-interact-hollow($panelcolor:'', $boxshadow:'', $underline:'') {
+  @if ($bgcolor != '' and $color != '') {
+    outline: none;
+    @if (lightness($bgcolor) < 50) {
+      box-shadow: inset 0 0 0 2px rgba($color, .6);
+    } @else {
+      box-shadow: inset 0 0 0 2px rgba($color, .4);
+    }
+  }
+}

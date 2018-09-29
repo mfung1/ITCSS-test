@@ -1,7 +1,6 @@
-.#{$namespace}-chvrn {
+.#{$namespace}-svg {
   display: inline-block;
   fill: none;
-  max-width: px-to-rem(18px);
   stroke-width: 1.2;
   vertical-align: middle;
 
@@ -10,6 +9,6 @@
   }
 
   &--crmsn {
-    stroke: $ddl-black;
+    stroke: $crimson;
   }
 }

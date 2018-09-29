@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: $base-font-size;
+  font-size: px-to-rem($base-font-size);
 }
 
 h1,h2,h3,h4,

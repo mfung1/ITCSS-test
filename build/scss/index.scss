@@ -19,15 +19,15 @@
         './04-Elements/links.scss';
 
 // 05-Objects
-@import './05-Objects/page-wrapper.scss',
-        './05-Objects/paragraphs.scss',
-        './05-Objects/divider.scss',
-        './05-Objects/chevron.scss',
-        './05-Objects/label.scss';
+@import './05-Objects/page-wrapper.scss';
 
 // 06-Components
 @import './06-Components/button.scss',
-        './06-Components/promo-pairing.scss';
+        './06-Components/promo-pairing.scss',
+        './06-Components/divider.scss',
+        './06-Components/svg.scss',
+        './06-Components/paragraphs.scss',
+        './06-Components/label.scss';
 
 // 07-Utilities
 @import './07-Utilities/spacings.scss';

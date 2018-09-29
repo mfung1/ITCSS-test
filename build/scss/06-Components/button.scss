@@ -3,17 +3,12 @@
   display: inline-block;
   font-size: px-to-rem(10px);
   max-height: px-to-rem(40px);
-  padding: 0 px-to-rem(20px);
+  min-width: px-to-rem(40px);
+  padding: px-to-rem(7px) px-to-rem(20px);
   text-align: center;
-  text-decoration: none;
   transition: box-shadow .3s;
   vertical-align: middle;
   white-space: nowrap;
-
-  .#{$namespace}-chvrn {
-    max-height: px-to-rem(40px);
-    height: px-to-rem(40px);
-  }
 
   &-flld {
     background-color: $crimson;
