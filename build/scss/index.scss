@@ -10,16 +10,16 @@
         './02-Tools/spacing-calc.scss';
 
 // 03-Generic
-@import './03-Generic/fonts.scss',
-        './03-Generic/reset.scss',
-        './03-Generic/flex-group.scss';
+@import './03-Generic/reset.scss',
+        './03-Generic/fonts.scss';
 
 // 04-Elements
 @import './04-Elements/headings.scss',
         './04-Elements/links.scss';
 
 // 05-Objects
-@import './05-Objects/page-wrapper.scss';
+@import './05-Objects/page-wrapper.scss',
+        './05-Objects/flex-group.scss';
 
 // 06-Components
 @import './06-Components/button.scss',
@@ -30,4 +30,5 @@
         './06-Components/label.scss';
 
 // 07-Utilities
-@import './07-Utilities/spacings.scss';
+@import './07-Utilities/spacings.scss',
+        './07-Utilities/colours.scss';
