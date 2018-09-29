@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="display: block" src="assets/img/Logo-colour.png"/>
+  <img style="display: block" src="docs/Logo-colour.png"/>
 </p>
 <h1 align="center">Online Creative - Christmas Checklist</h1>
 <p align="center">This repo is a SCSS library used for the Christmas Checklist page</p>
