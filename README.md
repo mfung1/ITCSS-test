@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="display: block" src="assets/img/tesco.svg"/>
+  <img style="display: block" src="assets/img/Logo-colour.png"/>
 </p>
 <h1 align="center">Online Creative - Christmas Checklist</h1>
 <p align="center">This repo is a SCSS library used for the Christmas Checklist page</p>
@@ -45,7 +45,7 @@ This section documents the different build processes in this repo.
 #### SCSS - Gulp Sass
 All CSS (excluding overrides and local styles) are in ```/build/SCSS/```. This repo follows the ITCSS methodology by Harry Roberts (@CSSWizardry on Twitter). This means the SCSS is split into different layers. See the diagram below:
 
-<img src="./Docs/itcss.svg">
+<img src="./docs/itcss.svg">
 
 ##### Layers
 - **Settings** - Variable configurations for things like colors, fonts, sizes, etc...
