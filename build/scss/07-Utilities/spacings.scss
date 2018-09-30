@@ -1,5 +1,8 @@
 // calcSpacing defined in 
 // ~/build/scss/02-tools/spacing-calc.scss
+.mb-9 {
+  margin-bottom: calcSpacing(2.25)!important;
+}
 .mb-16 {
   margin-bottom: calcSpacing(4)!important;
 }
@@ -11,6 +14,9 @@
 }
 .mb-36 {
   margin-bottom: calcSpacing(9)!important;
+}
+.mb-48 {
+  margin-bottom: calcSpacing(12)!important;
 }
 .mb-56 {
   margin-bottom: calcSpacing(14)!important;

@@ -1,14 +1,14 @@
 // Media Queries
 @mixin breakpoint($point) {
   @if $point == 'largeDesktop' {
-    @media (min-width: #{$break-largeDesktop}) { @content ; }
+    @media (min-width: #{$x-large}px) { @content ; }
   } @else if $point == 'desktop' {
-    @media (min-width: #{$break-desktop}) { @content ; }
+    @media (min-width: #{$large}px) { @content ; }
   } @else if $point == 'tablet' {
-    @media (min-width: #{$break-tablet})  { @content ; }
+    @media (min-width: #{$medium}px)  { @content ; }
   } @else if $point == 'mobile' {
-    @media (min-width: #{$break-mobile})  { @content ; }
+    @media (min-width: #{$small}px)  { @content ; }
   } @else {
-    @media (min-width: $point) { @content ; }
+    @media (min-width: #{$point}px) { @content ; }
   }
 }

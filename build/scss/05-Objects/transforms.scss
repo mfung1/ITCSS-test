@@ -15,6 +15,10 @@
     opacity: 1;
     transition: opacity .7s ease-out;
   }
+  .input-grid {
+    max-height: px-to-rem(1104px);
+    transition: max-height .6s ease-out;
+  }
 }
 
 [data-show="false"] {
@@ -24,7 +28,8 @@
   overflow: hidden;
   transition: max-height .6s ease-out, margin .6s ease;
   .input-grid {
-    visibility: hidden;
+    max-height: 0;
+    transition: max-height .6s ease-out;
   }
   .#{$namespace}-divider {
     opacity: 0;

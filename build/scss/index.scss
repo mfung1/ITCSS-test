@@ -7,7 +7,8 @@
 @import './02-Tools/breakpoint.scss',
         './02-Tools/line-height-calc.scss',
         './02-Tools/px-to-rem.scss',
-        './02-Tools/spacing-calc.scss';
+        './02-Tools/spacing-calc.scss',
+        './02-Tools/align-center.scss';
 
 // 03-Generic
 @import './03-Generic/reset.scss',
@@ -15,7 +16,8 @@
 
 // 04-Elements
 @import './04-Elements/headings.scss',
-        './04-Elements/links.scss';
+        './04-Elements/links.scss',
+        './04-Elements/form-resets.scss';
 
 // 05-Objects
 @import './05-Objects/page-wrapper.scss',
