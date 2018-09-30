@@ -10,6 +10,10 @@
       body {background: #fff}
       .panel{background: #f6f6f6;padding:12px;margin: 24px 0;}
       .bg-red {background: #8f0023}
+      .grd {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
     </style>
   </head>
   <body>
@@ -19,39 +23,64 @@
         <div class="ddl-divider"></div>
       </section>
       <section class="panel">
-        <svg class="ddl-svg ddl-svg--crmsn" viewBox="0 0 18 24" width="18" height="24">
-          <polyline points="5.31 3.35 14.28 12 5.31 20.64"></polyline>
-        </svg>
-        <svg class="ddl-svg ddl-svg--crmsn" width="24" height="26" viewBox="0 0 24 26">
-          <line x1="3" x2="21" y1="20.5" y2="20.5"></line>
-          <polyline points="7 11 12 16 17 11"></polyline>
-          <line x1="12" x2="12" y1="16" y2="3"></line>
-        </svg>
-        <svg class="ddl-svg ddl-svg--crmsn" viewBox="0 0 26 28" width="26" height="28">
-          <polygon class="a" points="13 19.05 7.46 22.12 8.52 15.61 4 10.97 10.24 10.02 13 4.12 15.76 10.02 22 10.97 17.48 15.61 18.54 22.12 13 19.05"></polygon>
-        </svg>
+        <article class="grd">
+          <div class="ta-c mr-36">
+            <svg class="ddl-svg ddl-svg--crmsn mb-16" viewBox="0 0 18 24" width="18" height="24">
+              <polyline points="5.31 3.35 14.28 12 5.31 20.64"></polyline>
+            </svg>
+            <p class="ddl-t2 cl-crmsn">Chevron</p>
+          </div>
+          <div class="ta-c mr-36">
+            <svg class="ddl-svg ddl-svg--crmsn mb-16" width="24" height="26" viewBox="0 0 24 26">
+              <line x1="3" x2="21" y1="20.5" y2="20.5"></line>
+              <polyline points="7 11 12 16 17 11"></polyline>
+              <line x1="12" x2="12" y1="16" y2="3"></line>
+            </svg>
+            <p class="ddl-t2 cl-crmsn">Download</p>
+          </div>
+          <div class="ta-c mr-36">
+            <svg class="ddl-svg ddl-svg--crmsn mb-16" viewBox="0 0 26 26" width="26" height="26">
+              <polygon class="a" points="13 19.05 7.46 22.12 8.52 15.61 4 10.97 10.24 10.02 13 4.12 15.76 10.02 22 10.97 17.48 15.61 18.54 22.12 13 19.05"></polygon>
+            </svg>
+            <p class="ddl-t2 cl-crmsn">Star</p>
+          </div>
+          <div class="ta-c mr-36">
+            <svg class="ddl-svg ddl-svg--crmsn mb-16" width="20" height="12" viewBox="0 0 20 12">                         <path
+              fill="none" fill-rule="evenodd"
+              stroke-width="1.2" d="M18.652 1.312L10 10.276 1.356 1.312"/>
+            </svg>
+            <p class="ddl-t2 cl-crmsn">Expand</p>
+          </div>
+        </article>
       </section>
       <section class="panel bg-red">
-        <article class="flex-grp">
-          <div class="mr-36">
-            <svg class="ddl-svg ddl-svg--wht" viewBox="0 0 18 24" width="18" height="24">
+        <article class="grd">
+          <div class="ta-c mr-36">
+            <svg class="ddl-svg ddl-svg--wht mb-16" viewBox="0 0 18 26" width="18" height="26">
               <polyline points="5.31 3.35 14.28 12 5.31 20.64"></polyline>
             </svg>
             <p class="ddl-t2 cl-wht">Chevron</p>
           </div>
-          <div class="mr-36">
-            <svg class="ddl-svg ddl-svg--wht" width="24" height="26" viewBox="0 0 24 26">
+          <div class="ta-c mr-36">
+            <svg class="ddl-svg ddl-svg--wht mb-16" width="24" height="26" viewBox="0 0 24 26">
               <line x1="3" x2="21" y1="20.5" y2="20.5"></line>
               <polyline points="7 11 12 16 17 11"></polyline>
               <line x1="12" x2="12" y1="16" y2="3"></line>
             </svg>
             <p class="ddl-t2 cl-wht">Download</p>
           </div>
-          <div class="mr-36">
-            <svg class="ddl-svg ddl-svg--wht" viewBox="0 0 26 28" width="26" height="28">
+          <div class="ta-c mr-36">
+            <svg class="ddl-svg ddl-svg--wht mb-16" viewBox="0 0 26 26" width="26" height="26">
               <polygon class="a" points="13 19.05 7.46 22.12 8.52 15.61 4 10.97 10.24 10.02 13 4.12 15.76 10.02 22 10.97 17.48 15.61 18.54 22.12 13 19.05"></polygon>
             </svg>
             <p class="ddl-t2 cl-wht">Star</p>
+          </div>
+          <div class="ta-c mr-36">
+            <svg class="ddl-svg ddl-svg--wht mb-16" width="20" height="12" viewBox="0 0 20 12">                           <path
+              fill="none" fill-rule="evenodd"
+              stroke-width="1.2" d="M18.652 1.312L10 10.276 1.356 1.312"/>
+            </svg>
+            <p class="ddl-t2 cl-wht">Expand</p>
           </div>
         </article>
       </section>

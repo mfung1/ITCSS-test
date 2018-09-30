@@ -48,3 +48,11 @@
     @include modern-bold;
   }
 }
+
+.#{$namespace}-btn-input {
+  border: 0 solid transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  @include modern-bold;
+}

@@ -22,13 +22,16 @@
         './05-Objects/flex-group.scss';
 
 // 06-Components
-@import './06-Components/button.scss',
+@import './06-Components/pill-button.scss',
+        './06-Components/roundel.scss',
         './06-Components/promo-pairing.scss',
         './06-Components/divider.scss',
         './06-Components/svg.scss',
+        './06-Components/filter.scss',
         './06-Components/paragraphs.scss',
         './06-Components/label.scss';
 
 // 07-Utilities
 @import './07-Utilities/spacings.scss',
-        './07-Utilities/colours.scss';
+        './07-Utilities/colours.scss',
+        './07-Utilities/alignment.scss';

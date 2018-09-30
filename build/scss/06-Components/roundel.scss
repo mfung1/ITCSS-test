@@ -1,0 +1,62 @@
+.#{$namespace}-rndl {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  &__icon {
+    background: $crimson;
+    border-radius: px-to-rem(100px);
+    display: inline-block;
+    transition: box-shadow .3s;
+  }
+  
+  .#{$namespace}-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.#{$namespace}-rndl__icon {
+  &--small {
+    max-width: px-to-rem(24px);
+    min-height: px-to-rem(24px);
+    min-width: px-to-rem(24px);
+
+    .#{$namespace}-xpnd {
+      height: px-to-rem(24px);
+      width: px-to-rem(24px);
+    }
+
+    .#{$namespace}-svg {
+      width: px-to-rem(20.5px);
+      height: px-to-rem(21px);
+      padding: 4px;
+      stroke-width: 2.4;
+    }
+
+  }
+
+  &--medium {
+    max-width: px-to-rem(32px);
+    min-height: px-to-rem(32px);
+    min-width: px-to-rem(32px);
+
+    .#{$namespace}-xpnd {
+      height: px-to-rem(32px);
+      width: px-to-rem(32px);
+    }
+  }
+
+  &--large {
+    max-width: px-to-rem(40px);
+    min-height: px-to-rem(40px);
+    min-width: px-to-rem(40px);
+
+    .#{$namespace}-xpnd {
+      height: px-to-rem(40px);
+      width: px-to-rem(40px);
+    }
+  }
+}
