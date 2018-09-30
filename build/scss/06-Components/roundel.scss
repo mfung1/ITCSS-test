@@ -3,11 +3,12 @@
   text-align: center;
   vertical-align: middle;
   position: relative;
+  transition: transform .6s ease-out;
   &__icon {
     background: $crimson;
     border-radius: px-to-rem(100px);
     display: inline-block;
-    transition: box-shadow .3s;
+    transition: box-shadow .3s ease-in-out, transform .6s ease-in-out;
   }
   
   .#{$namespace}-svg {

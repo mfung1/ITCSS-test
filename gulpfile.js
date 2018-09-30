@@ -129,6 +129,7 @@ gulp.task('scripts', () => {
     .pipe(babel({
       presets: ['env'],
     }))
+    .on('error', console.error.bind(console))
     .pipe(concat('scripts.min.js'))
     .pipe(uglifyjs())
     .pipe(gulp.dest('./dist/js'))
