@@ -3,3 +3,31 @@
   transform-origin: center;
   transition: transform .6s ease-out;
 }
+
+// Toggle showing and hiding panel area
+[data-show="true"] {
+  transform: none;
+  margin-top: px-to-rem(12px);
+  max-height: px-to-rem(1104px);
+  transition: max-height .6s ease-out, margin .6s ease;
+
+  .#{$namespace}-divider {
+    opacity: 1;
+    transition: opacity .7s ease-out;
+  }
+}
+
+[data-show="false"] {
+  max-height: 0;
+  margin: 0;
+  padding: 0!important;
+  overflow: hidden;
+  transition: max-height .6s ease-out, margin .6s ease;
+  .input-grid {
+    visibility: hidden;
+  }
+  .#{$namespace}-divider {
+    opacity: 0;
+    transition: opacity .1s ease-out;
+  }
+}

@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Online Creative - Christmas Checklist Repo
+    </title>
+    <link href="../../dist/css/styles.min.css" type="text/css" rel="stylesheet"/>
+    <link href="../../dist/css/fonts.css" rel="stylesheet" type="text/css"/>
+    <style>
+      body {background: #fff}
+      section:not(:first-child) {background: #f6f6f6;padding:12px;margin: 24px 0;}
+    </style>
+  </head>
+  <body>
+    <main class="ddl-wrapper">
+      <svg style="display: none">
+        <defs>
+          <symbol id="xpnd" viewBox="0 0 24 18">
+            <path d="M20.65 5.31L12 14.28 3.36 5.31" style="fill:none;"></path>
+          </symbol>
+        </defs>
+      </svg>
+      <section>
+        <h1 class="mb-19">Expander</h1>
+        <p class="ddl-t1">Could be used for an accordion, or to expand and contract an input panel.</p>
+        <div class="ddl-divider"></div>
+      </section>
+      <section>
+        <h2 class="mb-16">Roundel</h2> 
+        <div class="ddl-divider mb-36"></div>
+        <div id="Checklist" class="ddl-fltr">
+          <button class="ddl-btn-input" aria-expanded="false" aria-controls="Checklist">
+            <span class="ddl-rndl mr-8">
+              <span class="ddl-rndl__icon ddl-rndl__icon--sm">
+                <svg class="ddl-svg ddl-svg--wht">
+                  <use xlink:href="#xpnd"/>
+                </svg>
+              </span>
+            </span>
+            <span class="ddl-lbl ddl-t2 cl-crmsn">Filter by category</span>
+          </button>
+          <fieldset id="fields" data-show="false" class="input_group input_group--checkbox-radio">
+            <div class="ddl-divider mb-46"></div>
+            <legend class="legend hide">Pick a category</legend>
+            <div class="input-grid">
+              <div class="form_field">
+                <label class="label ddl-t3" for="fvrvwrer1">Item 1</label>
+                <div class="checkbox">
+                  <input id="muffins" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                </div>
+              </div>
+              <div class="form_field">
+                <label class="label ddl-t3" for="fvrvwrer2">Item 2</label>
+                <div class="checkbox">
+                  <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                </div>
+              </div>
+              <div class="form_field">
+                <label class="label ddl-t3" for="fvrvwrer2">Item 3</label>
+                <div class="checkbox">
+                  <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                </div>
+              </div>
+              <div class="form_field">
+                  <label class="label ddl-t3" for="fvrvwrer2">Item 4</label>
+                  <div class="checkbox">
+                    <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                  </div>
+              </div>
+              <div class="form_field">
+                  <label class="label ddl-t3" for="fvrvwrer1">Item 5</label>
+                  <div class="checkbox">
+                    <input id="muffins" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                  </div>
+                </div>
+                <div class="form_field">
+                  <label class="label ddl-t3" for="fvrvwrer2">Item 6</label>
+                  <div class="checkbox">
+                    <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                  </div>
+                </div>
+                <div class="form_field">
+                  <label class="label ddl-t3" for="fvrvwrer2">Item 7</label>
+                  <div class="checkbox">
+                    <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                  </div>
+                </div>
+                <div class="form_field">
+                    <label class="label ddl-t3" for="fvrvwrer2">Item 8</label>
+                    <div class="checkbox">
+                      <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                    </div>
+                </div>
+                <div class="form_field">
+                    <label class="label ddl-t3" for="fvrvwrer1">Item 9</label>
+                    <div class="checkbox">
+                      <input id="muffins" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                    </div>
+                  </div>
+                  <div class="form_field">
+                    <label class="label ddl-t3" for="fvrvwrer2">Item 10</label>
+                    <div class="checkbox">
+                      <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                    </div>
+                  </div>
+                  <div class="form_field">
+                    <label class="label ddl-t3" for="fvrvwrer2">Item 11</label>
+                    <div class="checkbox">
+                      <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                    </div>
+                  </div>
+                  <div class="form_field">
+                      <label class="label ddl-t3" for="fvrvwrer2">Item 12</label>
+                      <div class="checkbox">
+                        <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                      </div>
+                  </div>
+                  <div class="form_field">
+                      <label class="label ddl-t3" for="fvrvwrer1">Item 13</label>
+                      <div class="checkbox">
+                        <input id="muffins" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                      </div>
+                    </div>
+                    <div class="form_field">
+                      <label class="label ddl-t3" for="fvrvwrer2">Item 14</label>
+                      <div class="checkbox">
+                        <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                      </div>
+                    </div>
+                    <div class="form_field">
+                      <label class="label ddl-t3" for="fvrvwrer2">Item 15</label>
+                      <div class="checkbox">
+                        <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                      </div>
+                    </div>
+                    <div class="form_field">
+                        <label class="label ddl-t3" for="fvrvwrer2">Item 16</label>
+                        <div class="checkbox">
+                          <input id="bread" type="checkbox"> <span class="icon"><svg height="16" viewbox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.79 2.25L17.75.21a.72.72 0 0 0-1.02.002l-9.944 9.943L3.27 6.64a.72.72 0 0 0-1.02 0L.21 8.68A.721.721 0 0 0 .212 9.7l5.805 5.804c.209.208.479.483.755.483s.575-.275.784-.483L19.789 3.27a.721.721 0 0 0 0-1.02" fill="#FFF" fill-rule="evenodd"></path></svg></span>
+                        </div>
+                    </div>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+    </main>
+    <script src="../../dist/js/scripts.min.js"></script>
+  </body>
+</html>
+      
