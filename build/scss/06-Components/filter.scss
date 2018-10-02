@@ -1,17 +1,17 @@
 .#{$namespace}-fltr {
   padding: px-to-rem(12px);
   background: #ffffff;
+}
 
-  &:hover,
-  .#{$namespace}-btn-input:focus  {
-    .#{$namespace}-rndl__icon {
-      box-shadow: 0 0 0 4px rgba($crimson, .4);
-      transition: box-shadow $transition-duration $transition-func;
-    }
-    .#{$namespace}-lbl:after {
-      border-bottom-color: $crimson;
-      transition: border-bottom-color $transition-duration $transition-func;
-    }
+.#{$namespace}-tgglr:hover,
+.#{$namespace}-tgglr .#{$namespace}-btn-input:focus  {
+  .#{$namespace}-rndl__icon {
+    box-shadow: 0 0 0 4px rgba($crimson, .4);
+    transition: box-shadow $transition-duration $transition-func;
+  }
+  .#{$namespace}-lbl:after {
+    border-bottom-color: $crimson;
+    transition: border-bottom-color $transition-duration $transition-func;
   }
 }
 

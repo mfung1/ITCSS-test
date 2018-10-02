@@ -11,7 +11,9 @@
   max-height: px-to-rem(1104px);
   transition: max-height .6s ease-out, margin .6s ease;
 
-  .#{$namespace}-divider {
+  .#{$namespace}-divider,
+  .#{$namespace}-btn,
+  .form_field {
     opacity: 1;
     transition: opacity .7s ease-out;
   }
@@ -31,7 +33,10 @@
     max-height: 0;
     transition: max-height .6s ease-out;
   }
-  .#{$namespace}-divider {
+  .#{$namespace}-divider,
+  .#{$namespace}-btn,
+  .form_field
+   {
     opacity: 0;
     transition: opacity .1s ease-out;
   }
