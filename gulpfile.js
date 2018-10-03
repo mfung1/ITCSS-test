@@ -102,7 +102,7 @@ const config = {
 gulp.task('default', () => {
   BrowserSync.init({
     server: `${config.browser_sync.server_location}`,
-    logPrefix: 'Direct SCSS Library',
+    logPrefix: 'Christmas-Checklist',
     // tunnel: `${config.browser_sync.tunnelName}`,
   });
   gulp.watch('./build/scss/**/*.scss', ['sass']);

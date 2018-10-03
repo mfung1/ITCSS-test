@@ -1,7 +1,20 @@
 .#{$namespace}-nhncd-lnk {
   
-  .#{$namespace}-chvrn {
+  .#{$namespace}-svg {
     max-height: px-to-rem(24px);
     height: px-to-rem(24px);
   }
+  // Not used on the actual page; but could be needed in future.
+  // Currently used on hover on the card-item itself.
+  // &-wht:hover .#{$namespace}-lbl:after,
+  // &-wht:focus .#{$namespace}-lbl:after {
+  //   border-bottom-color: $ddl-white;
+  //   transition: border-bottom-color $transition-duration $transition-func;
+  // }
+
+  // &-crmsn:hover .#{$namespace}-lbl:after,
+  // &-crmsn:focus .#{$namespace}-lbl:after {
+  //   border-bottom-color: $crimson;
+  //   transition: border-bottom-color $transition-duration $transition-func;
+  // }
 }

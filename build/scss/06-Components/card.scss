@@ -1,0 +1,78 @@
+.#{$namespace}-crd-wrppr {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include breakpoint(tablet) {
+    flex-direction: row;
+  }
+  &-rvrs {
+    flex-direction: column;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+    }
+  }
+}
+.#{$namespace}-crd {
+  padding: px-to-rem(24px) px-to-rem(64px) px-to-rem(24px) px-to-rem(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @include breakpoint(tablet) {
+    padding: px-to-rem(24px);
+  }
+}
+.#{$namespace}-crd-grd {
+  display: flex;
+  flex-wrap: wrap;
+  @include breakpoint(desktop) {
+    flex-wrap: nowrap;
+  }
+}
+.#{$namespace}-crd,
+.#{$namespace}-crd-grd {
+  flex: 1 0 50%;
+}
+@include breakpoint(desktop) {
+  .#{$namespace}-crd {
+    flex: 1 0 25%;
+  }
+  .#{$namespace}-crd-grd {
+    flex: 1 0 75%;
+  }
+}
+
+.#{$namespace}-crd-itm {
+  background: center / cover no-repeat url('https://via.placeholder.com/200x400');
+  outline: 1px solid;
+  position: relative;
+  min-height: px-to-rem(148px);
+  transition: flex-basis .3s ease-in-out;
+  flex: 1 1 50%;
+
+  @include breakpoint(tablet) {
+    min-height: px-to-rem(186px);
+  }
+  @include breakpoint(desktop) {
+    min-height: px-to-rem(400px);
+    flex: 1 1 25%;
+  }
+
+  .#{$namespace}-nhncd-lnk {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+  }
+  &:hover .#{$namespace}-lbl:after,
+  &:focus .#{$namespace}-lbl:after {
+    border-bottom-color: $ddl-white;
+    transition: border-bottom-color $transition-duration $transition-func;
+  }
+  @include breakpoint(desktop) {
+    &:hover,
+    &:focus {
+      flex-basis: 35%;
+      transition: flex-basis .3s ease-in-out;
+    }
+  }
+}
