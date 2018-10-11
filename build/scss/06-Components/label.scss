@@ -6,6 +6,7 @@
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
+  padding-top: px-to-rem(1px);
 
   &:after {
     border-bottom: px-to-rem(1px) solid transparent;

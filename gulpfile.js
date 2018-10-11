@@ -113,12 +113,12 @@ gulp.task('default', () => {
 // Sass
 gulp.task('sass', () => {
   gulp.src(config.paths.sass)
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('styles.min.css'))
     .pipe(postcss([autoPrefixer()]))
     .pipe(cleancss())
-    .pipe(sourcemaps.write('../maps'))
+    // .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(BrowserSync.stream());
 });

@@ -1,5 +1,6 @@
 // 01-Settings
-@import './01-Settings/globals.scss',
+@import './01-Settings/config.scss',
+        './01-Settings/globals.scss',
         './01-Settings/colors',
         './01-Settings/breakpoints.scss';
 

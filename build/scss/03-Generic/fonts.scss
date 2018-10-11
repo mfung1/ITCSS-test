@@ -1,43 +1,46 @@
-@font-face {
-  font-family: modern-bold;
-  font-weight: 400;
-  src: url(../../../Fonts/TESCOModern-Bold-web.woff2) format('woff2'),
-  url(../../../Fonts/TESCOModern-Bold-web.woff) format('woff');
+@if $devMode == true {
+  @font-face {
+    font-family: boldfont;
+    font-weight: 400;
+    src: url(../../../Fonts/TESCOModern-Bold-web.woff2) format('woff2'),
+    url(../../../Fonts/TESCOModern-Bold-web.woff) format('woff');
+  }
+  
+  @font-face {
+    font-family: regularfont;
+    font-weight: 400;
+    src: url(../../../Fonts/TESCOModern-Regular-web.woff2) format('woff2'),
+         url(../../../Fonts/TESCOModern-Regular-web.woff) format('woff');
+  }
 }
 
-@font-face {
-  font-family: modern-regular;
-  font-weight: 400;
-  src: url(../../../Fonts/TESCOModern-Regular-web.woff2) format('woff2'),
-       url(../../../Fonts/TESCOModern-Regular-web.woff) format('woff');
-}
 
 @mixin modern-bold {
-  font-family: 'modern-bold', Arial, Helvetica, sans-serif;
+  font-family: 'boldfont', Arial, Helvetica, sans-serif;
 }
 
 @mixin modern-regular {
-  font-family: 'modern-regular', Arial, Helvetica, sans-serif;
+  font-family: 'regularfont', Arial, Helvetica, sans-serif;
 }
 
-h1,h2,h3,h4 {
-  font-family: 'modern-bold', Arial, Helvetica, sans-serif;
-  color: $ddl-black;
-  font-weight: 400;
+.#{$namespace}-wrapper {
+  h1,h2,h3,h4 {
+    font-family: 'boldfont', Arial, Helvetica, sans-serif;
+    color: $ddl-black;
+    font-weight: 400;
+  }
+  
+  p, a {
+    font-family: 'regularfont', Arial, Helvetica, sans-serif;
+    color: $ddl-black-2;
+    font-weight: 400;
+  }
+  
+  p, span {
+    color: $ddl-black-2;
+  }
+  
+  a {
+    text-decoration: none;
+  }
 }
-
-p, a {
-  font-family: 'modern-regular', Arial, Helvetica, sans-serif;
-  color: $ddl-black-2;
-  font-weight: 400;
-}
-
-p, span {
-  color: $ddl-black-2;
-}
-
-a {
-  text-decoration: none;
-}
-
-

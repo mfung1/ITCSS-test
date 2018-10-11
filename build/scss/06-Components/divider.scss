@@ -1,4 +1,5 @@
-.#{$namespace}-divider {
+
+.#{$namespace}-wrapper .#{$namespace}-divider {
   max-width: px-to-rem(1200px);
   min-height: px-to-rem(1px);
   background-color: $ddl-black-3;

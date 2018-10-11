@@ -1,4 +1,4 @@
-.flex-grp {
+.#{$namespace}-wrapper .flex-grp {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
