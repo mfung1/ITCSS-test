@@ -1,79 +1,85 @@
-.#{$namespace}-btn {
-  border-radius: px-to-rem(20px);
-  display: inline-block;
-  font-size: px-to-rem(10px);
-  max-height: px-to-rem(40px);
-  min-height: px-to-rem(40px);
-  min-width: px-to-rem(40px);
-  padding: px-to-rem(7px) px-to-rem(20px);
-  text-align: center;
-  transition: box-shadow .3s;
-  vertical-align: middle;
-  white-space: nowrap;
+.#{$namespace}-wrapper {
+  .#{$namespace}-btn {
+    border-radius: px-to-rem(20px);
+    display: inline-block;
+    font-size: px-to-rem(10px);
+    max-height: px-to-rem(40px);
+    min-height: px-to-rem(40px);
+    min-width: px-to-rem(40px);
+    padding: px-to-rem(7px) px-to-rem(20px);
+    text-align: center;
+    transition: box-shadow .3s;
+    vertical-align: middle;
+    white-space: nowrap;
 
-  &-crmsn {
-    background-color: $crimson;
-
-    .#{$namespace}-lbl {
-      color: $ddl-white;
+    &:focus {
+      outline: 0;
     }
 
-    &:hover,
-    &:focus {
-      box-shadow: 0 0 0 4px rgba($crimson, .4);
-      transition: box-shadow $transition-duration $transition-func;
-      .#{$namespace}-lbl:after {
-        border-bottom-color: $ddl-white;
-        transition: border-bottom-color $transition-duration $transition-func;
+    &-crmsn {
+      background-color: $crimson;
+
+      .#{$namespace}-lbl {
+        color: $ddl-white;
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 4px rgba($crimson, .4);
+        transition: box-shadow $transition-duration $transition-func;
+        .#{$namespace}-lbl:after {
+          border-bottom-color: $ddl-white;
+          transition: border-bottom-color $transition-duration $transition-func;
+        }
       }
     }
-  }
-  &-wht {
-    background-color: $ddl-white;
+    &-wht {
+      background-color: $ddl-white;
 
-    .#{$namespace}-lbl {
-      color: $crimson;
-    }
+      .#{$namespace}-lbl {
+        color: $crimson;
+      }
 
-    &:hover,
-    &:focus {
-      box-shadow: 0 0 0 4px rgba($ddl-white, .4);
-      transition: box-shadow $transition-duration $transition-func;
-      .#{$namespace}-lbl:after {
-        border-bottom-color: $crimson;
-        transition: border-bottom-color $transition-duration $transition-func;
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 4px rgba($ddl-white, .4);
+        transition: box-shadow $transition-duration $transition-func;
+        .#{$namespace}-lbl:after {
+          border-bottom-color: $crimson;
+          transition: border-bottom-color $transition-duration $transition-func;
+        }
       }
     }
-  }
 
-  &-hllw {
-    box-shadow: inset 0 0 0 2px $crimson;
-    background: transparent;
+    &-hllw {
+      box-shadow: inset 0 0 0 2px $crimson;
+      background: transparent;
 
-    .#{$namespace}-lbl {
-      color: $crimson;
-    }
-    &:hover,
-    &:focus {
-      box-shadow: inset 0 0 0 2px $crimson, 0 0 0 4px rgba($crimson, .4);
-      transition: box-shadow $transition-duration $transition-func;
-      .#{$namespace}-lbl:after {
-        border-bottom-color: $crimson;
-        transition: border-bottom-color $transition-duration $transition-func;
+      .#{$namespace}-lbl {
+        color: $crimson;
+      }
+      &:hover,
+      &:focus {
+        box-shadow: inset 0 0 0 2px $crimson, 0 0 0 4px rgba($crimson, .4);
+        transition: box-shadow $transition-duration $transition-func;
+        .#{$namespace}-lbl:after {
+          border-bottom-color: $crimson;
+          transition: border-bottom-color $transition-duration $transition-func;
+        }
       }
     }
+
+    .#{$namespace}-lbl {
+      @include modern-bold;
+    }
   }
 
-  .#{$namespace}-lbl {
+  .#{$namespace}-btn-input {
+    background-color: transparent;
     @include modern-bold;
-  }
-}
-
-.#{$namespace}-btn-input {
-  background-color: transparent;
-  @include modern-bold;
-  &:focus,
-  &:active {
-    outline: 0;
+    &:focus,
+    &:active {
+      outline: 0;
+    }
   }
 }

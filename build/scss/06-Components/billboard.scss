@@ -1,0 +1,47 @@
+.#{$namespace}-blbrd {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+
+  @include breakpoint('tablet') {
+    flex-direction: row;
+    flex-flow: row;
+  }
+  @include breakpoint(tablet) {
+    .promo-panel__pairing {
+      margin-bottom: 0;
+    }
+  }
+  &_img,
+  &_cpy {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  &_img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: px-to-rem(200px);
+    min-height: px-to-rem(200px);
+    @include breakpoint(mobile) {
+      max-height: px-to-rem(320px);
+      min-height: px-to-rem(320px);
+    }
+  }
+  &_cpy {
+    display: flex;
+    flex: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: px-to-rem(12px) px-to-rem(12px) px-to-rem(13px);
+    position: relative;
+    width: 100%;
+    min-height: px-to-rem(160px);
+    @include breakpoint(tablet) {
+      min-height: px-to-rem(320px);
+      padding: px-to-rem(16px) px-to-rem(32px) px-to-rem(13px) px-to-rem(16px);
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .#{$namespace}-fltr {
   padding: px-to-rem(12px);
-  background: #ffffff;
+  background: $ddl-white-2;
 }
 
 .#{$namespace}-tgglr:hover,
@@ -115,7 +115,7 @@
   
 }
 
-.input-grid {
+.#{$namespace}-wrapper .input-grid {
   display: grid; 
   grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
   @include breakpoint(desktop) {
