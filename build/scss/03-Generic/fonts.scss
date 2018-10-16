@@ -1,17 +1,5 @@
 @if $devMode == true {
-  @font-face {
-    font-family: boldfont;
-    font-weight: 400;
-    src: url(../../../Fonts/TESCOModern-Bold-web.woff2) format('woff2'),
-    url(../../../Fonts/TESCOModern-Bold-web.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: regularfont;
-    font-weight: 400;
-    src: url(../../../Fonts/TESCOModern-Regular-web.woff2) format('woff2'),
-         url(../../../Fonts/TESCOModern-Regular-web.woff) format('woff');
-  }
+  @import url(https://www.tesco.com/global/template/2017/css/global.datauri.modern.css?a=1);
 }
 
 
