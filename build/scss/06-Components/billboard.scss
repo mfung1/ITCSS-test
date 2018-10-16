@@ -25,6 +25,10 @@
     max-height: px-to-rem(159px);
     min-height: px-to-rem(159px);
     @include breakpoint(mobile) {
+      max-height: px-to-rem(200px);
+      min-height: px-to-rem(200px);
+    }
+    @include breakpoint(tablet) {
       max-height: px-to-rem(360px);
       min-height: px-to-rem(360px);
     }

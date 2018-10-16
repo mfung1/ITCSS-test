@@ -27,13 +27,13 @@
     transition: transform .6s ease, opacity .3s ease, max-height .3s linear, margin .6s ease;
   }
   .#{$namespace}-crd {
-    padding: px-to-rem(24px) px-to-rem(64px) px-to-rem(24px) px-to-rem(12px);
+    padding: px-to-rem(24px) px-to-rem(24px) px-to-rem(24px) px-to-rem(12px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     @include breakpoint(tablet) {
-      padding: px-to-rem(24px);
+      padding: px-to-rem(78px) px-to-rem(36px) px-to-rem(79px) px-to-rem(24px);
     }
   }
   .#{$namespace}-crd-grd {
@@ -56,6 +56,7 @@
   @include breakpoint(996) {
     .#{$namespace}-crd {
       flex: 1 0 25%;
+      max-height: px-to-rem(400px);
     }
     .#{$namespace}-crd-grd {
       flex: 1 0 75%;

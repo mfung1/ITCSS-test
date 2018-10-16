@@ -48,6 +48,17 @@
     top: 3px;
     left: 0
   }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    box-shadow: 0 0 0 4px rgba(241, 149, 171, 0.6);
+    border-color: #8f0023;
+    transition: box-shadow .3s ease-in-out, border-color .3s ease-in-out;
+  }
   
 }
 
@@ -86,10 +97,10 @@
     
     &:hover+.icon,
     &:focus+.icon {
-    box-shadow: 0 0 0 4px rgba(241, 149, 171, 0.6);
-    border-color: #8f0023;
-    transition: box-shadow .3s ease-in-out, border-color .3s ease-in-out;
- }
+      box-shadow: 0 0 0 4px rgba(241, 149, 171, 0.6);
+      border-color: #8f0023;
+      transition: box-shadow .3s ease-in-out, border-color .3s ease-in-out;
+    }
   }
   
   .icon {
