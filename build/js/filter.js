@@ -24,24 +24,38 @@ const getEvents = () => {
   addBtnEvents();
 }
 
+const hideSections = () => {
+  for (let select in selected) {
+    let index = selected[select];
+    targets[index].setAttribute('data-visible', 'false');
+    targets[index].setAttribute("style", "margin: 0!important");
+  }
+}
+
+const showSections = () => {
+  for (let select in selected) {
+    let index = selected[select];
+    targets[index].setAttribute('data-visible', 'true');
+    elements[index].checked = false;
+    targets[index].setAttribute("style", "");
+  }
+  selected = [];
+}
+
 const addBtnEvents = () => {
 
-    apply.addEventListener('click', function () {
-      for (let select in selected) {
-        let index = selected[select];
-        targets[index].setAttribute('data-visible', 'false');
-        targets[index].setAttribute("style", "margin: 0!important");
-      }
-    });
-    remove.addEventListener('click', function () {
-      for (let select in selected) {
-        let index = selected[select];
-        targets[index].setAttribute('data-visible', 'true');
-        elements[index].checked = false;
-        targets[index].setAttribute("style", "");
-      }
-      selected = [];
-    });
+    apply.addEventListener('click', hideSections);
+    apply.addEventListener('keypress', function (e) {
+      if(e.key == 'Spacebar' || e.key == 'Return'){
+        hideSections();
+      }}, false);
+    apply.addEventListener('touch', hideSections);
+    remove.addEventListener('click', showSections);
+    remove.addEventListener('keypress', function (e) {
+      if(e.key == 'Spacebar' || e.key == 'Return'){
+        showSections();
+      }}, false);
+    remove.addEventListener('touch', showSections);
 }
 
 document.addEventListener('DOMContentLoaded', getEvents);

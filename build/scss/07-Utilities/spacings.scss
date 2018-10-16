@@ -3,14 +3,30 @@
 .mb-9 {
   margin-bottom: calcSpacing(2.25)!important;
 }
+
+.mob-mb-9 {
+  margin-bottom: calcSpacing(2.25)!important;
+  @include breakpoint(mobile) {
+    margin-bottom: 0!important;
+  }
+}
 .mb-16 {
   margin-bottom: calcSpacing(4)!important;
+}
+.mb-18 {
+  margin-bottom: calcSpacing(4.5)!important;
 }
 .mb-19 {
   margin-bottom: calcSpacing(4.75)!important;
 }
+.mb-21 {
+  margin-bottom: calcSpacing(5.25)!important;
+}
 .mb-24 {
   margin-bottom: calcSpacing(6)!important;
+}
+.mb-26 {
+  margin-bottom: calcSpacing(6.5)!important;
 }
 .mb-36 {
   margin-bottom: calcSpacing(9)!important;

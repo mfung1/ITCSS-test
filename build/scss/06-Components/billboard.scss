@@ -22,11 +22,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-height: px-to-rem(200px);
-    min-height: px-to-rem(200px);
+    max-height: px-to-rem(159px);
+    min-height: px-to-rem(159px);
     @include breakpoint(mobile) {
-      max-height: px-to-rem(320px);
-      min-height: px-to-rem(320px);
+      max-height: px-to-rem(360px);
+      min-height: px-to-rem(360px);
     }
   }
   &_cpy {
@@ -35,12 +35,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: px-to-rem(12px) px-to-rem(12px) px-to-rem(13px);
+    padding: px-to-rem(24px) px-to-rem(12px) px-to-rem(24px);
     position: relative;
     width: 100%;
     min-height: px-to-rem(160px);
     @include breakpoint(tablet) {
-      min-height: px-to-rem(320px);
+      min-height: px-to-rem(360px);
       padding: px-to-rem(16px) px-to-rem(32px) px-to-rem(13px) px-to-rem(16px);
     }
   }
