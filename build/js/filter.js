@@ -15,10 +15,10 @@ const getEvents = () => {
   for (let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("click",(function(e) {
       if (inputs[i].checked == false) {
-        selected.push(e.target.id);
+        selected.push({tag: e.target, index: i});
         inputs[i].checked = true;
       } else {
-        let index = selected.indexOf(e.target.id);
+        let index = selected.indexOf(e.target);
         selected.splice(index, 1);
         inputs[i].checked = false;
       }
@@ -41,7 +41,7 @@ const getEvents = () => {
 
 const hideSections = () => {
   for (let select in selected) {
-    let index = selected[select];
+    let index = selected[select].index;
     targets[index].setAttribute('data-visible', 'false');
     targets[index].setAttribute("style", "margin: 0!important");
   }
@@ -49,7 +49,7 @@ const hideSections = () => {
 
 const showSections = () => {
   for (let select in selected) {
-    let index = selected[select];
+    let index = selected[select].index;
     targets[index].setAttribute('data-visible', 'true');
     elements[index].checked = false;
     targets[index].setAttribute("style", "");
