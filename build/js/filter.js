@@ -11,30 +11,26 @@ const fields = document.querySelectorAll('.form_field'),
 
 let selected = [];
 
+const isChecked = (i, e) => {
+  if (inputs[i].checked == false) {
+    selected.push({tag: e.target, index: i});
+    inputs[i].checked = true;
+  } else {
+    let index = selected.indexOf(e.target);
+    selected.splice(index, 1);
+    // inputs[i].checked = false;
+  }
+}
+
 const getEvents = () => {
   for (let i = 0; i < elements.length; i++) {
-  elements[i].addEventListener("click",(function(e) {
-      if (inputs[i].checked == false) {
-        selected.push({tag: e.target, index: i});
-        inputs[i].checked = true;
-      } else {
-        let index = selected.indexOf(e.target);
-        selected.splice(index, 1);
-        inputs[i].checked = false;
-      }
-  }));
-  elements[i].addEventListener("keypress",(function(e) {
+  elements[i].addEventListener("click", (e) => {isChecked(i, e)});
+  inputs[i].addEventListener("click", (e) => {isChecked(i, e)});
+  inputs[i].addEventListener("keypress", function (e) {
     if(e.keyCode == 32 || e.keyCode == 13 || e.charCode == 32 || e.charCode == 13) {
-      if (inputs[i].checked == false) {
-        selected.push(e.target.id);
-        inputs[i].checked = true;
-      } else {
-        let index = selected.indexOf(e.target.id);
-        selected.splice(index, 1);
-        inputs[i].checked = false;
-      }
+      isChecked(i, e);
     }
-  }));
+  });
   }
   addBtnEvents();
 }
@@ -51,7 +47,7 @@ const showSections = () => {
   for (let select in selected) {
     let index = selected[select].index;
     targets[index].setAttribute('data-visible', 'true');
-    elements[index].checked = false;
+    inputs[index].checked = false;
     targets[index].setAttribute("style", "");
   }
   selected = [];
@@ -62,12 +58,13 @@ const addBtnEvents = () => {
     apply.addEventListener('click', hideSections);
     apply.addEventListener('keypress', function (e) {
       if(e.keyCode == 32 || e.keyCode == 13 || e.charCode == 32 || e.charCode == 13){
+        console.log(e.keyCode);
         hideSections();
       }}, false);
     apply.addEventListener('touch', hideSections);
     remove.addEventListener('click', showSections);
     remove.addEventListener('keypress', function (e) {
-      if(e.keyCode == 32 || e.keyCode == 32 || e.charCode == 32 || e.charCode == 13){
+      if(e.keyCode == 32 || e.keyCode == 13 || e.charCode == 32 || e.charCode == 13){
         showSections();
       }}, false);
     remove.addEventListener('touch', showSections);
