@@ -15,7 +15,7 @@ const addClass = (element, element2, theClass) => {
 
 const expand = () => {
   let thehandler = document.getElementById('checklist-btn');
-  let theTarget = document.querySelector('ddl-rndl');
+  let theTarget = document.querySelector('.ddl-rndl');
   let thecollapser = document.getElementById('fields');
   thehandler.addEventListener('click', () => {addClass(theTarget, thecollapser, 'rotate')}, false);
   thehandler.addEventListener('keypress', e => {
