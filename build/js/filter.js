@@ -22,7 +22,7 @@ const getEvents = () => {
         selected.splice(index, 1);
         inputs[i].checked = false;
       }
-    }));
+  }));
   elements[i].addEventListener("keypress",(function(e) {
     if(e.keyCode == 32 || e.keyCode == 13 || e.charCode == 32 || e.charCode == 13) {
       if (inputs[i].checked == false) {

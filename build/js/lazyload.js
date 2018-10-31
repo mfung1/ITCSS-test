@@ -1,29 +1,31 @@
-const getImages = document.querySelectorAll('[data-bg]'),
-      images = [...getImages];
+const getImages = document.querySelectorAll('[data-bg]');
 
-const detect_location = (images) => {
-  let x = Math.max(document.documentElement.clientWidth, window.innerWidth | 0),
-      y = Math.max(document.documentElement.clientHeight, window.innerHeight | 0);
-  for (let image of images) {
-    let cords = image.getBoundingClientRect();
-    let result = cords.top >= 0 && cords.left >= 0 && cords.top <= (window.innerHeight || document.documentElement.clientHeight);
-    
-    if (result && !image.className.includes('loaded')) {
-      let bg = image.getAttribute('data-bg'),
-          img = new Image();
-
-      img.loading = () => {
-        image.className.add('loaded');
-      }
-      img.onload = () => {
-          image.src = `${bg}`;
-          !image.className.includes('loading') ? image.classList.remove('loading') : '';
-          image.className.includes('loaded') ? '' : image.classList.add('loaded');
-      }
-      image.src = bg;
-      if(img.complete == false) {img.loading()} else {img.onload()}
-    }
-  }
+const loaded = (image, src) => {
+  image.removeAttribute('data-bg');
+  // image.removeAttribute('loading');
+  if(src != null){ image.src = src };
+  image.setAttribute('loaded', '');
 }
-// console.log(images);
-document.addEventListener('scroll', e => {debounce(detect_location(images), 100, false)});
+
+const isViewable = (image) => {
+  let cords = image.getBoundingClientRect(),
+    result = cords.top >= 0 && cords.left >= 0 && cords.top <= (window.innerHeight || document.documentElement.clientHeight),
+    hasImage = image.querySelector('img');
+  return (result && !hasImage)
+}
+
+const loadImages = () => {
+  getImages.forEach(image => {
+    let viewable = isViewable(image);
+    if (viewable) {
+      image.setAttribute('loading', '');
+      let img = new Image(),
+          src = image.getAttribute('data-bg');
+      if(src != null){ img.src = src };
+      img.addEventListener('load', () => {setTimeout(loaded(image, src), 1000)});
+    }
+  })
+}
+
+
+document.addEventListener('scroll', debounce(loadImages, 300, false));

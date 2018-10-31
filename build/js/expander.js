@@ -15,10 +15,10 @@ const addClass = (element, element2, theClass) => {
 
 const expand = () => {
   let thehandler = document.getElementById('checklist-btn');
-  let theTarget = document.getElementsByClassName('ddl-rndl')[0];
+  let theTarget = document.querySelector('ddl-rndl');
   let thecollapser = document.getElementById('fields');
-  thehandler.addEventListener('click', function(){addClass(theTarget, thecollapser, 'rotate')}, false);
-  thehandler.addEventListener('keypress', function (e) {
+  thehandler.addEventListener('click', () => {addClass(theTarget, thecollapser, 'rotate')}, false);
+  thehandler.addEventListener('keypress', e => {
     if(e.key == 'Spacebar' || e.key == 'Return'){
       addClass(theTarget, thecollapser, 'rotate');
     }}, false);
