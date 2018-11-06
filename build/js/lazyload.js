@@ -15,7 +15,7 @@ const isViewable = (image) => {
 }
 
 const loadImages = () => {
-  getImages.forEach(image => {
+  for (let image of getImages) {
     let viewable = isViewable(image);
     if (viewable) {
       image.setAttribute('loading', '');
@@ -24,7 +24,7 @@ const loadImages = () => {
       if(src != null){ img.src = src };
       img.addEventListener('load', () => {setTimeout(loaded(image, src), 1000)});
     }
-  })
+  }
 }
 
 

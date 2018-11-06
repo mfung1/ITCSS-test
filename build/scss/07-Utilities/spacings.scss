@@ -6,7 +6,7 @@
 
 .mob-mb-9 {
   margin-bottom: calcSpacing(2.25)!important;
-  @include breakpoint(mobile) {
+  @include breakpoint(356) {
     margin-bottom: 0!important;
   }
 }

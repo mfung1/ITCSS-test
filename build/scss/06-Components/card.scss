@@ -1,114 +1,117 @@
-.#{$namespace}-wrapper {
-  .#{$namespace}-crd-wrppr {
-    display: flex;
-    flex-direction: column-reverse;
-  
+.#{$namespace}-crd-wrppr {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include breakpoint(650) {
+    flex-direction: row;
+  }
+  &-rvrs {
+    flex-direction: column;
     @include breakpoint(650) {
       flex-direction: row;
     }
-    &-rvrs {
-      flex-direction: column;
-      @include breakpoint(650) {
-        flex-direction: row;
-      }
-    }
   }
-  [data-visible="true"] {
-    transform: none;
-    opacity: 1;
-    max-height: 560px;
-    transition: transform .6s ease, opacity .6s ease, max-height .3s linear, margin .6s ease;
-  }
-  
-  [data-visible="false"] {
-    transform: translateY(-20px);
-    opacity: 0;
-    max-height: 0;
-    transition: transform .6s ease, opacity .3s ease, max-height .3s linear, margin .6s ease;
-  }
-  .#{$namespace}-crd {
-    padding: px-to-rem(24px) px-to-rem(24px) px-to-rem(24px) px-to-rem(12px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    @include breakpoint(tablet) {
-      padding: px-to-rem(78px) px-to-rem(36px) px-to-rem(79px) px-to-rem(24px);
-    }
-  }
-  .#{$namespace}-crd-img {
-    object-fit: cover;
-    height: 100%;
-    max-width: 100%;
-    width: 100%;
-    display: block;
-    // max-height: 50%;
-    @include breakpoint(tablet) {
-      max-height: 100%;
-    }
-  }
+}
+[data-visible="true"] {
+  transform: none;
+  opacity: 1;
+  max-height: 560px;
+  transition: transform .6s ease, opacity .6s ease, max-height .3s linear, margin .6s ease;
+}
 
-  .#{$namespace}-crd-grd {
-    display: flex;
-    flex-wrap: wrap;
-    @include breakpoint(996) {
-      flex-wrap: nowrap;
-    }
+[data-visible="false"] {
+  transform: translateY(-20px);
+  opacity: 0;
+  max-height: 0;
+  transition: transform .6s ease, opacity .3s ease, max-height .3s linear, margin .6s ease;
+}
+.#{$namespace}-crd {
+  padding: px-to-rem(24px) px-to-rem(24px) px-to-rem(24px) px-to-rem(12px);
+  display: flex;
+  flex-direction: column;
+  flex:  0 1 auto;
+  justify-content: center;
+  align-items: flex-start;
+
+  .#{$namespace}-t3 {
+    align-self: stretch;
   }
+  @include breakpoint(tablet) {
+    padding: px-to-rem(78px) px-to-rem(36px) px-to-rem(79px) px-to-rem(24px);
+  }
+}
+.#{$namespace}-crd-img {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  // max-height: 50%;
+  @include breakpoint(tablet) {
+    max-height: 100%;
+  }
+}
+
+.#{$namespace}-crd-grd {
+  display: flex;
+  flex-wrap: wrap;
+  @include breakpoint(996) {
+    flex-wrap: nowrap;
+  }
+}
+.#{$namespace}-crd,
+.#{$namespace}-crd-grd {
+  flex: 1 0 auto;
+}
+@include breakpoint(650) {
   .#{$namespace}-crd,
   .#{$namespace}-crd-grd {
-    flex: 1 0 auto;
+    flex: 1 0 50%;
   }
-  @include breakpoint(650) {
-    .#{$namespace}-crd,
-    .#{$namespace}-crd-grd {
-      flex: 1 0 50%;
-    }
+}
+@include breakpoint(996) {
+  .#{$namespace}-crd {
+    flex: 1 0 25%;
+    max-height: px-to-rem(400px);
+  }
+  .#{$namespace}-crd-grd {
+    flex: 1 0 75%;
+  }
+}
+.#{$namespace}-crd-itm {
+  background: center / cover no-repeat;
+  position: relative;
+  min-height: px-to-rem(148px);
+  max-height: px-to-rem(148px);
+  transition: flex-basis .3s ease-in-out;
+  flex: 1 0 50%;
+  overflow: hidden;
+
+  @include breakpoint(mobile) {
+    min-height: px-to-rem(186px);
+    max-height: px-to-rem(148px);
   }
   @include breakpoint(996) {
-    .#{$namespace}-crd {
-      flex: 1 0 25%;
-      max-height: px-to-rem(400px);
-    }
-    .#{$namespace}-crd-grd {
-      flex: 1 0 75%;
-    }
+    min-height: px-to-rem(400px);
+    flex: 1 1 25%;
   }
-  .#{$namespace}-crd-itm {
-    background: center / cover no-repeat;
-    position: relative;
-    min-height: px-to-rem(148px);
-    max-height: px-to-rem(148px);
-    transition: flex-basis .3s ease-in-out;
-    flex: 1 0 50%;
-    overflow: hidden;
-  
-    @include breakpoint(mobile) {
-      min-height: px-to-rem(186px);
-      max-height: px-to-rem(148px);
-    }
-    @include breakpoint(996) {
-      min-height: px-to-rem(400px);
-      flex: 1 1 25%;
-    }
-  
-    .#{$namespace}-nhncd-lnk {
-      position: absolute;
-      z-index: 2;
-      bottom: 12px;
-      right: 12px;
-    }
-    &:hover .#{$namespace}-lbl:after,
-    &:focus .#{$namespace}-lbl:after {
-      border-bottom-color: $ddl-white;
-      transition: border-bottom-color $transition-duration $transition-func;
-    }
-    @include breakpoint(desktop) {
-      &:hover,
-      &:focus {
-        flex-basis: 35%;
-        transition: flex-basis .3s ease-in-out;
-      }
+
+  .#{$namespace}-nhncd-lnk {
+    position: absolute;
+    z-index: 2;
+    bottom: 12px;
+    right: 12px;
+  }
+  &:hover .#{$namespace}-lbl:after,
+  &:focus .#{$namespace}-lbl:after {
+    border-bottom-color: $ddl-white;
+    transition: border-bottom-color $transition-duration $transition-func;
+  }
+  @include breakpoint(desktop) {
+    &:hover,
+    &:focus {
+      flex-basis: 35%;
+      transition: flex-basis .3s ease-in-out;
     }
   }
 }

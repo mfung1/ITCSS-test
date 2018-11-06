@@ -72,7 +72,8 @@ gulp scripts: This will:
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
+// const sourcemaps = require('gulp-sourcemaps');
+
 const concat = require('gulp-concat');
 const uglifyjs = require('gulp-uglify');
 const cleancss = require('gulp-clean-css');
@@ -103,7 +104,7 @@ gulp.task('default', () => {
   BrowserSync.init({
     server: `${config.browser_sync.server_location}`,
     logPrefix: 'Christmas-Checklist',
-    // tunnel: `${config.browser_sync.tunnelName}`,
+    tunnel: `${config.browser_sync.tunnelName}`,
   });
   gulp.watch('./build/scss/**/*.scss', ['sass']);
   gulp.watch('./build/JS/**/*.js', ['scripts']);
@@ -125,9 +126,9 @@ gulp.task('sass', () => {
 
 // JavaScript
 gulp.task('scripts', () => {
-  gulp.src(config.paths.js)
+  gulp.src(['node_modules/babel-polyfill/dist/polyfill.js',config.paths.js])
     .pipe(babel({
-      presets: ['env'],
+      presets: ['@babel/preset-env'],
     }))
     .on('error', console.error.bind(console))
     .pipe(concat('scripts.min.js'))

@@ -9,6 +9,9 @@ html {
 body {
   background-color: $ddl-white;
 }
+main, section {
+  display: block; // Not block level in IE..
+}
 
 .#{$namespace}-wrapper {
   h1,h2,h3,h4,

@@ -11,7 +11,8 @@
     "Last 2 versions",
     "iOS 9",
     "Last 4 Safari versions",
-    "not BlackBerry < 10"
+    "not BlackBerry < 10",
+    "ie 11"
   ],
   "keywords": [
     "Sass",
@@ -24,11 +25,12 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
     "ajv": "^6.5.1",
     "autoprefixer": "^8.6.2",
-    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-airbnb": "^2.4.0",
-    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.4",
     "browserslist": "^3.2.8",
     "eslint": "^4.19.1",
@@ -40,12 +42,11 @@
     "eslint-plugin-react": "^7.9.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-babel": "^7.0.1",
+    "gulp-babel": "^8.0.0",
     "gulp-changed": "^3.2.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-minify-inline": "^1.0.0",
-    "gulp-notify": "^3.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.4",
