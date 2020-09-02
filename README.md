@@ -163,9 +163,6 @@ This repository uses **BrowserSync**, which allows you to view the local environ
 ---
 ### Common Errors
 
-#### Localtunnel connection refused
-This error often occurs under Tesco Networks, but isn't a common occurence. You might encounter this if you're using Cisco AnyConnect or some other means to connect via VPN as the secure network acts as a firewall.
-
 #### Node / NPM Errors
 Commonly occurs if your NPM or Node version is past the current stable (LTS) version. I recommend using something like [NVM](https://github.com/creationix/nvm/blob/master/README.md) to manage your versions.
 
