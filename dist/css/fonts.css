@@ -1,11 +1,11 @@
 @font-face {
   font-family: boldfont;
   font-weight: normal;
-  src: url(../../../assets/fonts/TESCOModern-Bold-web.woff) format('woff');
+  src: url(../../../ITCSS-test/Fonts/TESCOModern-Bold-web.woff) format('woff');
 }
 
 @font-face {
   font-family: regularfont;
   font-weight: normal;
-  src: url(../../../Fonts/TESCOModern-Regular-web.woff) format('woff');
+  src: url(../../../ITCSS-test/Fonts/TESCOModern-Regular-web.woff) format('woff');
 }
