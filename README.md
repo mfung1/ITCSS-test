@@ -1,13 +1,5 @@
-<p align="center">
-  <img style="display: block" src="docs/Logo-colour.png"/>
-</p>
-<h1 align="center">Online Creative - Christmas Checklist</h1>
+<h1 align="center">Christmas Checklist</h1>
 <p align="center">This repo is a SCSS library used for the Christmas Checklist page</p>
-
-<a href="https://github.dev.global.tesco.org/pages/creative-editorial-content-devs/christmas-checklist/">Component Site</a>
-### What is this?
-
-This repository is updated and managed by members of the **Online Creative** developers (@creative-editorial-content-devs).
 
 **Required Technologies**
 
