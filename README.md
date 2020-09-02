@@ -1,5 +1,5 @@
-<h1 align="center">Christmas Checklist</h1>
-<p align="center">This repo is a SCSS library used for the Christmas Checklist page</p>
+<h1 align="center">ITCSS test</h1>
+<p align="center">This repo is a SCSS library that is intended to follow the ITCSS guidelines for building a scalable component library utilising the cascade property of CSS.</p>
 
 **Required Technologies**
 
